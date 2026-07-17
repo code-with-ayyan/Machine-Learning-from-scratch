@@ -24,6 +24,7 @@ Each algorithm is implemented step by step, including preprocessing, model train
 MachineLearningFromScratch/
 │
 ├── Linear_Regression/
+├── Logistic_Regression/
 └── README.md
 ```
 
@@ -34,7 +35,7 @@ MachineLearningFromScratch/
 | Algorithm           | Status        |
 | ------------------- | ------------- |
 | Linear Regression   | ✅ Completed   |
-| Logistic Regression | ⏳ Coming Soon |
+| Logistic Regression | ✅ Completed   |
 | Decision Tree       | ⏳ Coming Soon |
 | Random Forest       | ⏳ Coming Soon |
 | KNN                 | ⏳ Coming Soon |

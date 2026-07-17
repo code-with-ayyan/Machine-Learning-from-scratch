@@ -65,8 +65,6 @@ Linear_Regression/
 ├── insurance.csv
 ├── insurance.ipynb
 ├── Linear_Regression.py
-├── __pycache__
-│   └── Linear_Regression.cpython-314.pyc
 └── README.md
 ```
 
