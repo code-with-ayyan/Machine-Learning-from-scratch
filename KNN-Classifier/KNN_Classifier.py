@@ -46,6 +46,7 @@ class KNN_Classifier():
         return prediction 
     
     def predict(self, X):
+        
         predictions = []
         
         for x in X:
