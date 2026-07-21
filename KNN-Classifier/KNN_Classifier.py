@@ -5,7 +5,10 @@ from collections import Counter
 class KNN_Classifier():
 
     def __init__(self,k = 3):
-        self.k = k 
+        
+        self.k = k
+        self.X_train = None
+        self.y_train = None
         
     def fit(self,X,y):
         
@@ -19,8 +22,8 @@ class KNN_Classifier():
             "Number of samples in X and y must be equal."
         )
         
-        self.X_train = X 
-        self.y_train = y
+        self.X_train = np.array(X)
+        self.y_train = np.array(y)
         
     def euclidean_distance(self,x1,x2):
         
@@ -46,6 +49,8 @@ class KNN_Classifier():
         return prediction 
     
     def predict(self, X):
+        
+        X = np.array(X)
         
         predictions = []
         
