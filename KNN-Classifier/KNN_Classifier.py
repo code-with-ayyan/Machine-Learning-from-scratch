@@ -39,7 +39,7 @@ class KNN_Classifier():
         
         k_indices = np.argsort(distances)[:self.k]
         
-        k_labels = [self.y[i] for i in k_indices]
+        k_labels = [self.y_train[i] for i in k_indices]
         
         prediction = Counter(k_labels).most_common(1)[0][0]
         
@@ -48,9 +48,9 @@ class KNN_Classifier():
     def predict(self, X):
         predictions = []
         
-        for x in self.X:
+        for x in X:
             prediction = self._predict(x)
             predictions.append(prediction)
             
-            return np.array(prediction)
+        return np.array(predictions)
     
