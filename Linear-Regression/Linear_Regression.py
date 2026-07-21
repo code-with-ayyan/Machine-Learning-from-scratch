@@ -13,7 +13,6 @@ class LinearRegressionScratch:
 
         n_samples, n_features = X.shape
 
-        
         self.weights = np.zeros(n_features)
         self.bias = 0
 
@@ -37,4 +36,5 @@ class LinearRegressionScratch:
 
     # Prediction
     def predict(self, X):
+        
         return np.dot(X, self.weights) + self.bias
