@@ -101,6 +101,22 @@ The scratch implementation achieved performance comparable to the scikit-learn i
 
 ---
 
+## Model Comparison
+
+To verify the correctness of the scratch implementation, the model was compared with **scikit-learn's `KNeighborsClassifier`** using the same preprocessed dataset, train-test split, and **K = 7**.
+
+| Metric        | Custom Model | Scikit-learn Model |
+| ------------- | -----------: | -----------------: |
+| **Accuracy**  |   **82.68%** |         **82.68%** |
+| **Precision** |   **72.97%** |         **72.97%** |
+| **Recall**    |   **83.08%** |         **83.08%** |
+| **F1 Score**  |   **77.70%** |         **77.70%** |
+
+The custom implementation achieved **identical performance** to scikit-learn's implementation across all evaluation metrics. This confirms that the scratch implementation correctly reproduces the behavior of the standard `KNeighborsClassifier` and validates the correctness of the algorithm implementation.
+
+---
+
+
 ## Learning Outcomes
 
 Through this project, I learned:
