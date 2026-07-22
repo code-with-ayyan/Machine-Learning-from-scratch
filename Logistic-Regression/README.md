@@ -124,14 +124,21 @@ Through this project, I learned:
 
 ---
 
-# 🚀 Future Improvements
+## Model Comparison
 
-* Multi-Class Logistic Regression
-* Regularization (L1 & L2)
-* Mini-Batch Gradient Descent
-* Stochastic Gradient Descent (SGD)
-* Early Stopping
-* Learning Rate Scheduling
+To validate the correctness of the custom implementation, the model was also compared with **scikit-learn's `LogisticRegression`** implementation using the same preprocessed dataset and train-test split.
+
+| Metric        | Custom Model | Scikit-learn Model |
+| ------------- | -----------: | -----------------: |
+| **Accuracy**  |   **81.01%** |         **81.56%** |
+| **Precision** |   **72.97%** |         **74.32%** |
+| **Recall**    |   **79.41%** |         **79.71%** |
+| **F1 Score**  |   **76.06%** |         **76.92%** |
+
+The custom Logistic Regression model achieved performance very close to the scikit-learn implementation across all evaluation metrics. While the **scikit-learn** model achieved slightly higher Accuracy, Precision, Recall, and F1 Score, the results confirm that the scratch implementation correctly learns the decision boundary using **Gradient Descent** and the **Sigmoid Function**.
+
+This comparison validates the correctness of the custom implementation while highlighting the optimization and numerical efficiency provided by production-ready machine learning libraries such as **scikit-learn**.
+
 
 ---
 
