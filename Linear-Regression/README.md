@@ -80,6 +80,24 @@ Linear_Regression/
 
 ---
 
+## Model Comparison
+
+To validate the correctness of the custom implementation, the model was also compared with **scikit-learn's `LinearRegression`** implementation using the same preprocessed dataset and train-test split.
+
+| Metric          | Custom Model | Scikit-learn Model |
+| --------------- | -----------: | -----------------: |
+| **R² Score**    |   **75.49%** |         **80.35%** |
+| **Adjusted R²** |   **74.93%** |         **79.90%** |
+| **RMSE**        |  **6710.52** |        **6008.61** |
+| **MAE**         |  **4782.16** |        **4309.57** |
+
+The custom implementation successfully learned the underlying relationship between the input features and produced competitive results. However, the **scikit-learn** implementation achieved a higher **R² Score** and lower prediction errors across all evaluation metrics due to its highly optimized numerical linear algebra routines. In contrast, the custom model learns the parameters using **Gradient Descent**, making it an excellent educational implementation for understanding the mathematical foundations of Linear Regression.
+
+This comparison validates the correctness of the scratch implementation while demonstrating the performance advantages of production-ready machine learning libraries.
+
+
+---
+
 ## Features of this Project
 
 * Linear Regression implemented from scratch
