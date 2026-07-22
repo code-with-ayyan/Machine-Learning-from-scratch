@@ -112,6 +112,21 @@ Displays the selected features used during training.
 
 ---
 
+## Model Comparison
+
+To validate the correctness of the scratch implementation, the model was compared with **scikit-learn's `KNeighborsRegressor`** using the same preprocessed dataset, train-test split, and **K = 5**.
+
+| Metric          | Custom Model | Scikit-learn Model |
+| --------------- | -----------: | -----------------: |
+| **R² Score**    |   **77.75%** |         **77.76%** |
+| **Adjusted R²** |   **77.24%** |         **77.25%** |
+| **RMSE**        |  **6393.56** |        **6392.69** |
+| **MAE**         |  **3256.05** |        **3251.63** |
+
+The custom implementation achieved performance **almost identical** to scikit-learn's implementation across all evaluation metrics. The minimal differences are due to numerical precision and implementation-level optimizations. These results validate the correctness of the scratch implementation while demonstrating that it closely reproduces the behavior of the standard `KNeighborsRegressor`.
+
+---
+
 ## Learning Outcomes
 
 Through this project, I learned:
