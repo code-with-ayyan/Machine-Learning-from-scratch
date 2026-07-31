@@ -28,6 +28,8 @@ MachineLearningFromScratch/
 ├── Logistic-Regression/
 ├── KNN-Classifier/
 ├── KNN-Regression/
+├── Naive-bayes/
+├── Decision-Tree-Classifier/
 └── README.md
 ```
 
@@ -41,10 +43,11 @@ MachineLearningFromScratch/
 | Logistic Regression |            ✅           |            ✅            | ✅ Completed |
 | KNN Classification  |            ✅           |            ✅            | ✅ Completed |
 | KNN Regression      |            ✅           |            ✅            | ✅ Completed |
-| Decision Tree       |            ⏳           |            ⏳            | Coming Soon |
+| Decision Tree Classifier|            ✅       |            ✅            | ✅ Completed |
+| Decision Tree Classifier|            ⏳       |            ⏳            | Coming Soon |
 | Random Forest       |            ⏳           |            ⏳            | Coming Soon |
 | SVM                 |            ⏳           |            ⏳            | Coming Soon |
-| Naive Bayes         |            ⏳           |            ⏳            | Coming Soon |
+| Naive Bayes         |            ✅           |            ✅            | ✅ Completed |
 | K-Means             |            ⏳           |            ⏳            | Coming Soon |
 | PCA                 |            ⏳           |            ⏳            | Coming Soon |
 
