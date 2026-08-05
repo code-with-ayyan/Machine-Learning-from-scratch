@@ -1,4 +1,4 @@
-import numpy as np 
+import numpy as np
 
 
 class Node:
@@ -22,8 +22,8 @@ class Node:
         self.gain = gain
 
         self.value = value
-        
-        
+
+
 class DecisionTreeRegressor:
 
     def __init__(
@@ -36,36 +36,35 @@ class DecisionTreeRegressor:
 
         self.min_samples_split = min_samples_split
         self.max_depth = max_depth
-        
-        
+
     def _split(self, feature_values, threshold):
 
         left_idx = np.where(feature_values <= threshold)[0]
-
         right_idx = np.where(feature_values > threshold)[0]
 
         return left_idx, right_idx
-    
-    
+
     def _leaf_value(self, y):
-        
+
         return np.mean(y)
-    
-    
+
     def _variance(self, y):
+
+        if len(y) == 0:
+            return 0
 
         mean = np.mean(y)
 
         variance = np.mean((y - mean) ** 2)
 
         return variance
-    
-    
+
     def _variance_reduction(
-    self,
-    y,
-    feature_values,
-    threshold):
+        self,
+        y,
+        feature_values,
+        threshold
+    ):
 
         parent_variance = self._variance(y)
 
@@ -75,7 +74,6 @@ class DecisionTreeRegressor:
         )
 
         if len(left_idx) == 0 or len(right_idx) == 0:
-
             return 0
 
         n = len(y)
@@ -112,8 +110,63 @@ class DecisionTreeRegressor:
         )
 
         return variance_reduction
-    
-    
+
+    def _best_split(self, X, y, n_features):
+
+        best_split = {}
+        best_gain = -1
+
+        for feature in range(n_features):
+
+            feature_values = X[:, feature]
+
+            thresholds = np.unique(feature_values)
+
+            for threshold in thresholds:
+
+                gain = self._variance_reduction(
+                    y,
+                    feature_values,
+                    threshold
+                )
+
+                if gain > best_gain:
+
+                    left_idx, right_idx = self._split(
+                        feature_values,
+                        threshold
+                    )
+
+                    best_gain = gain
+
+                    best_split = {
+
+                        "feature": feature,
+
+                        "threshold": threshold,
+
+                        "gain": gain,
+
+                        "left_dataset": {
+
+                            "X": X[left_idx],
+
+                            "y": y[left_idx]
+
+                        },
+
+                        "right_dataset": {
+
+                            "X": X[right_idx],
+
+                            "y": y[right_idx]
+
+                        }
+
+                    }
+
+        return best_split
+
     def _build_tree(self, X, y, depth=0):
 
         n_samples = X.shape[0]
@@ -178,8 +231,7 @@ class DecisionTreeRegressor:
             gain=best_split["gain"]
 
         )
-    
-    
+
     def fit(self, X, y):
 
         if len(X) != len(y):
@@ -194,9 +246,8 @@ class DecisionTreeRegressor:
         self.root = self._build_tree(
             X,
             y
-            )
-        
-        
+        )
+
     def _predict(self, x):
 
         node = self.root
@@ -212,7 +263,7 @@ class DecisionTreeRegressor:
                 node = node.right
 
         return node.value
-    
+
     def predict(self, X):
 
         X = np.array(X)
