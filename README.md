@@ -46,11 +46,10 @@ MachineLearningFromScratch/
 | KNN Regression      |            ✅           |            ✅            | ✅ Completed |
 | Decision Tree Classifier|            ✅       |            ✅            | ✅ Completed |
 | Decision Tree Regressor |            ✅       |            ✅            | ✅ Completed |
-| Random Forest       |            ⏳           |            ⏳            | Coming Soon |
+| Random Forest Classifier|            ⏳           |            ⏳            | Coming Soon |
+| Random Forest Regressor |            ⏳           |            ⏳            | Coming Soon |
 | SVM                 |            ⏳           |            ⏳            | Coming Soon |
-| Naive Bayes         |            ✅           |            ✅            | ✅ Completed |
-| K-Means             |            ⏳           |            ⏳            | Coming Soon |
-| PCA                 |            ⏳           |            ⏳            | Coming Soon |
+| Naive Bayes (Gaussian) |            ✅           |            ✅            | ✅ Completed |
 
 ---
 
