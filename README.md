@@ -31,6 +31,7 @@ MachineLearningFromScratch/
 ├── Naive-bayes/
 ├── Decision-Tree-Classifier/
 ├── Decision-Tree-Regressor/
+├── SVM/
 └── README.md
 ```
 
@@ -46,10 +47,10 @@ MachineLearningFromScratch/
 | KNN Regression      |            ✅           |            ✅            | ✅ Completed |
 | Decision Tree Classifier|            ✅       |            ✅            | ✅ Completed |
 | Decision Tree Regressor |            ✅       |            ✅            | ✅ Completed |
-| Random Forest Classifier|            ⏳           |            ⏳            | Coming Soon |
-| Random Forest Regressor |            ⏳           |            ⏳            | Coming Soon |
-| SVM                 |            ⏳           |            ⏳            | Coming Soon |
-| Naive Bayes (Gaussian) |            ✅           |            ✅            | ✅ Completed |
+| Random Forest Classifier|            ⏳       |            ⏳            | Coming Soon |
+| Random Forest Regressor |            ⏳       |            ⏳            | Coming Soon |
+| SVM                    |            ✅        |            ✅            | ✅ Completed |
+| Naive Bayes (Gaussian) |            ✅        |            ✅            | ✅ Completed |
 
 ---
 
