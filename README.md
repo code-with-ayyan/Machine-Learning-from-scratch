@@ -32,6 +32,7 @@ MachineLearningFromScratch/
 ├── Decision-Tree-Classifier/
 ├── Decision-Tree-Regressor/
 ├── SVM/
+├── Practice/
 └── README.md
 ```
 
@@ -53,6 +54,16 @@ MachineLearningFromScratch/
 | Naive Bayes (Gaussian) |            ✅        |            ✅            | ✅ Completed |
 
 ---
+
+## Practice & Experimental Modules
+
+The **Practice/** directory contains practical experiments and end-to-end workflows focused on **model evaluation, hyperparameter tuning, and cross-validation techniques** using real-world datasets (such as Mobile Price Classification).
+
+Key concepts covered in this directory:
+
+**Cross-Validation**: K-Fold and Stratified K-Fold validation techniques to prevent overfitting and assess model stability across data splits.
+**Hyperparameter Tuning**: Systematically searching for optimal model configurations using GridSearchCV and RandomizedSearchCV.
+**Model Optimization**: Evaluating performance improvements by comparing baseline models against hyperparameter-tuned estimators (e.g., Support Vector Machines, Tree-based models).
 
 ## Technologies
 
