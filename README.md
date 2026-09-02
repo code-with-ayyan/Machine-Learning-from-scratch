@@ -55,15 +55,20 @@ MachineLearningFromScratch/
 
 ---
 
-## Practice & Experimental Modules
-
-The **Practice/** directory contains practical experiments and end-to-end workflows focused on **model evaluation, hyperparameter tuning, and cross-validation techniques** using real-world datasets (such as Mobile Price Classification).
+## Practice, Experimental Modules & Ensemble learning working structure
+```
+├── Practice/
+```
+The **Practice/** directory contains practical experiments and end-to-end workflows focused on **model evaluation, hyperparameter tuning, and cross-validation techniques** using real-world datasets (such as Mobile Price Classification) & also **Ensemble learning** working structure using sklearn.
 
 Key concepts covered in this directory:
 
 **Cross-Validation**: K-Fold and Stratified K-Fold validation techniques to prevent overfitting and assess model stability across data splits.
 **Hyperparameter Tuning**: Systematically searching for optimal model configurations using GridSearchCV and RandomizedSearchCV.
 **Model Optimization**: Evaluating performance improvements by comparing baseline models against hyperparameter-tuned estimators (e.g., Support Vector Machines, Tree-based models).
+**Ensemble Learning** : **Stacking** implemented using sklearn using 3 estimators ***LogisticRegression***, ***DecisionTreeClassifier***, ***SVC*** and the final estimator was ***LogisticRegression*** weither the Stacking does not improve the model performance for the Mobile Price Classification dataset but it is important to see how stacking works because it help in Real world Machine Learning
+
+
 
 ## Technologies
 
