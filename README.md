@@ -55,19 +55,54 @@ MachineLearningFromScratch/
 
 ---
 
-## Practice, Experimental Modules & Ensemble learning working structure
-```
+## Practice, Experimental Modules & Ensemble Learning
+
+```text
 ├── Practice/
 ```
-The **Practice/** directory contains practical experiments and end-to-end workflows focused on **model evaluation, hyperparameter tuning, and cross-validation techniques** using real-world datasets (such as Mobile Price Classification) & also **Ensemble learning** working structure using sklearn.
+
+The **`Practice/`** directory contains practical experiments and end-to-end workflows focused on **model evaluation, preprocessing pipelines, hyperparameter tuning, cross-validation, and ensemble learning** using real-world datasets such as the **Mobile Price Classification** dataset.
 
 Key concepts covered in this directory:
 
-**Cross-Validation**: K-Fold and Stratified K-Fold validation techniques to prevent overfitting and assess model stability across data splits.
-**Hyperparameter Tuning**: Systematically searching for optimal model configurations using GridSearchCV and RandomizedSearchCV.
-**Model Optimization**: Evaluating performance improvements by comparing baseline models against hyperparameter-tuned estimators (e.g., Support Vector Machines, Tree-based models).
-**Ensemble Learning** : **Stacking** implemented using sklearn using 3 estimators ***LogisticRegression***, ***DecisionTreeClassifier***, ***SVC*** and the final estimator was ***LogisticRegression*** weither the Stacking does not improve the model performance for the Mobile Price Classification dataset but it is important to see how stacking works because it help in Real world Machine Learning
+### **Pipeline Basics**
 
+Worked with the basics of **Scikit-learn Pipelines** to combine preprocessing steps and machine learning models into a single workflow, making the training and prediction process more organized and helping avoid data leakage during cross-validation and hyperparameter tuning.
+
+### **Cross-Validation**
+
+**K-Fold** cross-validation technique is used to evaluate model performance across different data splits and assess model stability and generalization.
+
+### **Hyperparameter Tuning**
+
+Systematically searching for optimal model configurations using **GridSearchCV** and **RandomizedSearchCV**.
+
+### **Model Optimization**
+
+Evaluating performance improvements by comparing **baseline models** with **hyperparameter-tuned estimators**, including models such as **Support Vector Machines** and **tree-based models**.
+
+### **Ensemble Learning**
+
+#### **1. Stacking**
+
+Implemented using **Scikit-learn's `StackingClassifier`** with three base estimators:
+
+* **LogisticRegression**
+* **DecisionTreeClassifier**
+* **SVC**
+
+The final estimator is **LogisticRegression**.
+
+Although Stacking did not improve the model's performance on the **Mobile Price Classification** dataset, implementing it was important for understanding how multiple different models can work together through a **meta-model** to make the final prediction. This is a valuable technique in real-world machine learning workflows.
+
+#### **2. Bagging — Random Forest**
+
+Implemented using **Scikit-learn's `RandomForestClassifier`** to understand the concept of **Bagging (Bootstrap Aggregating)**.
+
+Bagging trains multiple models on different bootstrap samples of the training data and combines their predictions. In classification, the final prediction is generally determined through **majority voting**.
+
+**Random Forest** extends this idea by combining multiple decision trees while also introducing randomness in feature selection, which helps improve model diversity, robustness, and generalization.
+ 
 
 
 ## Technologies
