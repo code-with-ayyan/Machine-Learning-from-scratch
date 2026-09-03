@@ -103,6 +103,23 @@ Bagging trains multiple models on different bootstrap samples of the training da
 
 **Random Forest** extends this idea by combining multiple decision trees while also introducing randomness in feature selection, which helps improve model diversity, robustness, and generalization.
  
+#### **Boosting**
+
+Explored **Boosting** as another major ensemble learning technique using **Scikit-learn**.
+
+The practice includes three boosting algorithms:
+
+* **AdaBoost**
+* **Gradient Boosting**
+* **XGBoost**
+
+These algorithms were explored to understand how multiple weak or sequentially trained learners can be combined to build a stronger predictive model.
+
+The goal was not only to compare their performance, but also to understand **how boosting works, how to implement it using Scikit-learn, and when it can be useful in practical machine learning workflows**.
+
+Although boosting did not provide a significant performance improvement on the **Mobile Price Classification** dataset, exploring these algorithms was important for understanding their behavior and learning how ensemble methods can be applied to different datasets.
+
+I also plan to **implement these boosting algorithms from scratch** in the future to understand their internal mechanisms and mathematical foundations more deeply.
 
 
 ## Technologies
