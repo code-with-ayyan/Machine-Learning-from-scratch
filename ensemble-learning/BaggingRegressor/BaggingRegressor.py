@@ -1,21 +1,24 @@
-import numpy as np 
+import numpy as np
 from copy import deepcopy
 
-class CustomBaggingClassifier:
-    
-    def __init__(self,
-                 base_estimator, 
-                 n_estimators=10,
-                 max_samples =1.0,
-                 bootstrap=True):
+
+class CustomBaggingRegressor:
+
+    def __init__(
+        self,
+        base_estimator,
+        n_estimators=10,
+        max_samples=1.0,
+        bootstrap=True
+    ):
         self.base_estimator = base_estimator
         self.n_estimators = n_estimators
         self.max_samples = max_samples
         self.bootstrap = bootstrap
         self.estimators_ = []
-        
-        
+
     def bootstrap_sample(self, X, y):
+
         X = np.asarray(X)
         y = np.asarray(y)
 
@@ -28,29 +31,34 @@ class CustomBaggingClassifier:
         )
 
         return X[indices], y[indices]
-    
-    
-    
+
     def fit(self, X, y):
-        
+
         self.estimators_ = []
-        
+
         for _ in range(self.n_estimators):
+
             X_sample, y_sample = self.bootstrap_sample(X, y)
+
             estimator = deepcopy(self.base_estimator)
+
             estimator.fit(X_sample, y_sample)
+
             self.estimators_.append(estimator)
-            
+
         return self
-    
+
     def _predict(self, X):
+
         predictions = np.array([
             estimator.predict(X)
             for estimator in self.estimators_
         ])
-    
+
+        return predictions
+
     def predict(self, X):
-        
+
         predictions = self._predict(X)
-        mean_predictions = np.mean(predictions, axis =0)
-        return mean_predictions
+
+        return np.mean(predictions, axis=0)
