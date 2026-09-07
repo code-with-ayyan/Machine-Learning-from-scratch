@@ -16,11 +16,17 @@ class CustomBaggingClassifier:
         
         
     def bootstrap_sample(self, X, y):
+        X = np.asarray(X)
+        y = np.asarray(y)
+
         n_samples = X.shape[0]
-        if self.bootstrap:
-            indices = np.random.choice(n_samples, size=int(self.max_samples * n_samples), replace=True)
-        else:
-            indices = np.random.choice(n_samples, size=int(self.max_samples * n_samples), replace=False)
+
+        indices = np.random.choice(
+            n_samples,
+            size=int(self.max_samples * n_samples),
+            replace=self.bootstrap
+        )
+
         return X[indices], y[indices]
     
     
