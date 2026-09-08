@@ -33,6 +33,7 @@ MachineLearningFromScratch/
 ├── Decision-Tree-Regressor/
 ├── SVM/
 ├── Practice/
+├── ensemble-learning-scratch/
 └── README.md
 ```
 
@@ -48,10 +49,24 @@ MachineLearningFromScratch/
 | KNN Regression      |            ✅           |            ✅            | ✅ Completed |
 | Decision Tree Classifier|            ✅       |            ✅            | ✅ Completed |
 | Decision Tree Regressor |            ✅       |            ✅            | ✅ Completed |
+| ensemble learning techniques|       ⏳        |            ⏳          | In Progress 📈|
+| SVM (Classifier)       |            ✅        |            ✅            | ✅ Completed |
+| Naive Bayes (Gaussian) |            ✅        |            ✅            | ✅ Completed |
+
+---
+
+## Ensemble Learning Progress
+
+| Technique          | Scratch Implementation | Scikit-learn Comparison |    Status   |
+| ------------------ | :--------------------: | :---------------------: | :---------: |
+| Bagging Classifier |            ✅           |            ✅            | ✅ Completed |
+| Bagging Regressor  |            ✅           |            ✅            | ✅ Completed |
 | Random Forest Classifier|            ⏳       |            ⏳            | Coming Soon |
 | Random Forest Regressor |            ⏳       |            ⏳            | Coming Soon |
-| SVM                    |            ✅        |            ✅            | ✅ Completed |
-| Naive Bayes (Gaussian) |            ✅        |            ✅            | ✅ Completed |
+| Boosting           |            ⏳           |            ⏳            |  ⏳ Pending  |
+| AdaBoost           |            ⏳           |            ⏳            |  ⏳ Pending  |
+| Gradient Boosting  |            ⏳           |            ⏳            |  ⏳ Pending  |
+| Stacking           |            ⏳           |            ⏳            |  ⏳ Pending  |
 
 ---
 
