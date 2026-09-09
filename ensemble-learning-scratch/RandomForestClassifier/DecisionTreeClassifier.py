@@ -252,10 +252,13 @@ class CustomDecisionTreeClassifier:
 
 
         if (
-            n_samples < self.min_samples_split
-            or depth >= self.max_depth
-            or n_classes == 1
-        ):
+    n_samples < self.min_samples_split
+    or (
+        self.max_depth is not None
+        and depth >= self.max_depth
+    )
+    or n_classes == 1
+):
 
             leaf_value = self._most_common_label(y)
 
