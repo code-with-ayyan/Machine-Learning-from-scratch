@@ -61,8 +61,8 @@ MachineLearningFromScratch/
 | ------------------ | :--------------------: | :---------------------: | :---------: |
 | Bagging Classifier |            ✅           |            ✅            | ✅ Completed |
 | Bagging Regressor  |            ✅           |            ✅            | ✅ Completed |
-| Random Forest Classifier|            ⏳       |            ⏳            | Coming Soon |
-| Random Forest Regressor |            ⏳       |            ⏳            | Coming Soon |
+| Random Forest Classifier|            ✅       |            ✅            | ✅ Completed |
+| Random Forest Regressor |            ✅       |            ✅            | ✅ Completed |
 | Boosting           |            ⏳           |            ⏳            |  ⏳ Pending  |
 | AdaBoost           |            ⏳           |            ⏳            |  ⏳ Pending  |
 | Gradient Boosting  |            ⏳           |            ⏳            |  ⏳ Pending  |
