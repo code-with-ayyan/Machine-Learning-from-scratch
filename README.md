@@ -57,14 +57,18 @@ MachineLearningFromScratch/
 
 ## Ensemble Learning Progress
 
+```text
+├── ensemble-learning-scratch/
+```
+
 | Technique          | Scratch Implementation | Scikit-learn Comparison |    Status   |
 | ------------------ | :--------------------: | :---------------------: | :---------: |
 | Bagging Classifier |            ✅           |            ✅            | ✅ Completed |
 | Bagging Regressor  |            ✅           |            ✅            | ✅ Completed |
 | Random Forest Classifier|            ✅       |            ✅            | ✅ Completed |
 | Random Forest Regressor |            ✅       |            ✅            | ✅ Completed |
-| Boosting           |            ⏳           |            ⏳            |  ⏳ Pending  |
-| AdaBoost           |            ⏳           |            ⏳            |  ⏳ Pending  |
+| AdaBoost Classifier          |            ✅       |            ✅            | ✅ Completed |
+| AdaBoost Regressor          |            ✅       |            ✅            | ✅ Completed |
 | Gradient Boosting  |            ⏳           |            ⏳            |  ⏳ Pending  |
 | Stacking           |            ⏳           |            ⏳            |  ⏳ Pending  |
 
