@@ -74,71 +74,63 @@ MachineLearningFromScratch/
 
 ---
 
-## Practice, Experimental Modules & Ensemble Learning
+# 🧪 Practice — Model Tuning & Unsupervised Learning
+
+The **`Practice/`** directory contains practical experiments covering **model evaluation, preprocessing, hyperparameter tuning, ensemble learning, and unsupervised learning** using real-world and built-in datasets.
+
+## 📌 Topics Covered
+
+### 🔧 Model Tuning & Ensemble Learning
+
+`model_tuning_techniques_ensemble_learning.ipynb` covers:
+
+- Scikit-learn Pipelines
+- K-Fold Cross-Validation
+- GridSearchCV & RandomizedSearchCV
+- Baseline vs tuned models
+- Stacking
+- Bagging with Random Forest
+- Boosting with AdaBoost, Gradient Boosting & XGBoost
+
+The experiments focus on understanding practical model optimization and ensemble learning workflows.
+
+
+### 🔍 Unsupervised Learning
+
+The **`unsupervised_practice/`** directory contains practical experiments with unsupervised learning algorithms.
+
+#### K-Means Clustering
+
+Implemented **K-Means clustering** on the Iris dataset, covering:
+
+- Feature scaling using `StandardScaler`
+- Selecting the number of clusters using the **Elbow Method**
+- Evaluating cluster quality using **Silhouette Score**
+- Training K-Means with `K=3`
+- Visualizing clusters and centroids
+- Comparing discovered clusters with the actual Iris class labels
+- Evaluating clustering using **Adjusted Rand Index (ARI)** and **Normalized Mutual Information (NMI)**
+- Testing the trained model on new unseen samples and mapping clusters to Iris species
+
+Results from the experiment:
+
+- **ARI:** 0.7302
+- **NMI:** 0.7582
+
+## 📂 Structure
 
 ```text
-├── Practice/
+Practice/
+│
+├── model_tuning_techniques_ensemble_learning.ipynb
+│
+└── unsupervised_practice/
+    ├── KMeans.ipynb
+    ├── PCA.ipynb                 # Coming soon
+    └── DBSCAN.ipynb              # Coming soon
+
 ```
-
-The **`Practice/`** directory contains practical experiments and end-to-end workflows focused on **model evaluation, preprocessing pipelines, hyperparameter tuning, cross-validation, and ensemble learning** using real-world datasets such as the **Mobile Price Classification** dataset.
-
-Key concepts covered in this directory:
-
-### **Pipeline Basics**
-
-Worked with the basics of **Scikit-learn Pipelines** to combine preprocessing steps and machine learning models into a single workflow, making the training and prediction process more organized and helping avoid data leakage during cross-validation and hyperparameter tuning.
-
-### **Cross-Validation**
-
-**K-Fold** cross-validation technique is used to evaluate model performance across different data splits and assess model stability and generalization.
-
-### **Hyperparameter Tuning**
-
-Systematically searching for optimal model configurations using **GridSearchCV** and **RandomizedSearchCV**.
-
-### **Model Optimization**
-
-Evaluating performance improvements by comparing **baseline models** with **hyperparameter-tuned estimators**, including models such as **Support Vector Machines** and **tree-based models**.
-
-### **Ensemble Learning**
-
-#### **1. Stacking**
-
-Implemented using **Scikit-learn's `StackingClassifier`** with three base estimators:
-
-* **LogisticRegression**
-* **DecisionTreeClassifier**
-* **SVC**
-
-The final estimator is **LogisticRegression**.
-
-Although Stacking did not improve the model's performance on the **Mobile Price Classification** dataset, implementing it was important for understanding how multiple different models can work together through a **meta-model** to make the final prediction. This is a valuable technique in real-world machine learning workflows.
-
-#### **2. Bagging — Random Forest**
-
-Implemented using **Scikit-learn's `RandomForestClassifier`** to understand the concept of **Bagging (Bootstrap Aggregating)**.
-
-Bagging trains multiple models on different bootstrap samples of the training data and combines their predictions. In classification, the final prediction is generally determined through **majority voting**.
-
-**Random Forest** extends this idea by combining multiple decision trees while also introducing randomness in feature selection, which helps improve model diversity, robustness, and generalization.
- 
-#### **Boosting**
-
-Explored **Boosting** as another major ensemble learning technique using **Scikit-learn**.
-
-The practice includes three boosting algorithms:
-
-* **AdaBoost**
-* **Gradient Boosting**
-* **XGBoost**
-
-These algorithms were explored to understand how multiple weak or sequentially trained learners can be combined to build a stronger predictive model.
-
-The goal was not only to compare their performance, but also to understand **how boosting works, how to implement it using Scikit-learn, and when it can be useful in practical machine learning workflows**.
-
-Although boosting did not provide a significant performance improvement on the **Mobile Price Classification** dataset, exploring these algorithms was important for understanding their behavior and learning how ensemble methods can be applied to different datasets.
-
-I also plan to **implement these boosting algorithms from scratch** in the future to understand their internal mechanisms and mathematical foundations more deeply.
+This directory is mainly for hands-on experimentation and strengthening practical understanding of machine learning techniques before applying them to larger projects.
 
 
 ## Technologies
