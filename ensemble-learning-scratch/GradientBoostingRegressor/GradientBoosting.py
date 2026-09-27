@@ -1,7 +1,7 @@
 import numpy as np 
 from copy import deepcopy
 
-class GradientBoostingRegressor:
+class CustomGradientBoostingRegressor:
     
     def __init__(self,base_estimator, n_estimators, learning_rate = 0.1):
         
@@ -13,7 +13,7 @@ class GradientBoostingRegressor:
         self.initial_prediction = None
         self.estimators = []
         
-        
+        self.residuals = []
         
     def fit(self, X, y):
         
@@ -29,6 +29,8 @@ class GradientBoostingRegressor:
             
             residual = y - prediction
             
+            self.residuals.append(residual)
+            
             model = deepcopy(self.base_estimator)
             
             model.fit(X, residual)
@@ -41,6 +43,10 @@ class GradientBoostingRegressor:
             
             
         return self  
+    
+    def residuals_(self):
+        
+        return np.array(self.residuals)
         
     def predict(self, X):
         
