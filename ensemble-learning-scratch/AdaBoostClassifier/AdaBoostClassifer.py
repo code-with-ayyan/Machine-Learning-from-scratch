@@ -69,34 +69,34 @@ class CustomAdaBoostClassifier:
     
     
     def predict(self, X):
-
-        X = np.array(X)
-
-        all_predictions = np.array([
-            estimator.predict(X)
-            for estimator in self.estimators
-        ])
-
-        predictions = []
-
-        for sample_predictions in all_predictions.T:
-
-            class_scores = {}
-
-            for prediction, alpha in zip(
-                sample_predictions,
-                self.estimator_weights
-            ):
-                class_scores[prediction] = (
-                    class_scores.get(prediction, 0) + alpha
+    
+            X = np.array(X)
+    
+            all_predictions = np.array([
+                estimator.predict(X)
+                for estimator in self.estimators
+            ])
+    
+            predictions = []
+    
+            for sample_predictions in all_predictions.T:
+    
+                class_scores = {}
+    
+                for prediction, alpha in zip(
+                    sample_predictions,
+                    self.estimator_weights
+                ):
+                    class_scores[prediction] = (
+                        class_scores.get(prediction, 0) + alpha
+                    )
+    
+                final_class = max(
+                    class_scores,
+                    key=class_scores.get
                 )
-
-            final_class = max(
-                class_scores,
-                key=class_scores.get
-            )
-
-            predictions.append(final_class)
-
-        return np.array(predictions)
+    
+                predictions.append(final_class)
+    
+            return np.array(predictions)
     
