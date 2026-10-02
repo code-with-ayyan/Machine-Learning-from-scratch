@@ -69,7 +69,8 @@ MachineLearningFromScratch/
 | Random Forest Regressor |            ✅       |            ✅            | ✅ Completed |
 | AdaBoost Classifier          |            ✅       |            ✅            | ✅ Completed |
 | AdaBoost Regressor          |            ✅       |            ✅            | ✅ Completed |
-| Gradient Boosting  |            ⏳           |            ⏳            |  ⏳ Pending  |
+| Gradient Boosting Regressor |            ✅           |            ✅            |  ✅ Completed  |
+| Gradient Boosting Classification |            ✅           |            ✅            |  ✅ Completed  |
 | Stacking           |            ⏳           |            ⏳            |  ⏳ Pending  |
 
 ---
