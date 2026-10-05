@@ -75,6 +75,12 @@ MachineLearningFromScratch/
 
 ---
 
+## XGBoost 
+
+| Regression             | ✅ Completed |
+| Binary Classification  | ✅ Completed |
+| Multi class            | ⏳ Pending   |
+
 # 🧪 Practice — Model Tuning & Unsupervised Learning
 
 The **`Practice/`** directory contains practical experiments covering **model evaluation, preprocessing, hyperparameter tuning, ensemble learning, and unsupervised learning** using real-world and built-in datasets.
