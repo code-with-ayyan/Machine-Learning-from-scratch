@@ -2,7 +2,7 @@ import numpy as np
 from copy import deepcopy
 
 
-class StackingRegressor:
+class CustomStackingRegressor:
 
     def __init__(
         self,
