@@ -49,7 +49,7 @@ MachineLearningFromScratch/
 | KNN Regression      |            ✅           |            ✅            | ✅ Completed |
 | Decision Tree Classifier|            ✅       |            ✅            | ✅ Completed |
 | Decision Tree Regressor |            ✅       |            ✅            | ✅ Completed |
-| ensemble learning techniques|       ⏳        |            ⏳          | In Progress 📈|
+| ensemble learning techniques|       ✅        |            ✅            | ✅ Completed   |
 | SVM (Classifier)       |            ✅        |            ✅            | ✅ Completed |
 | Naive Bayes (Gaussian) |            ✅        |            ✅            | ✅ Completed |
 
@@ -71,7 +71,7 @@ MachineLearningFromScratch/
 | AdaBoost Regressor          |            ✅       |            ✅            | ✅ Completed |
 | Gradient Boosting Regressor |            ✅           |            ✅            |  ✅ Completed  |
 | Gradient Boosting Classification |            ✅           |            ✅            |  ✅ Completed  |
-| Stacking           |            ⏳           |            ⏳            |  ⏳ Pending  |
+| Stacking           |            ✅           |            ✅            |  ✅ Completed  |
 
 ---
 
@@ -183,6 +183,9 @@ The comparison includes standard evaluation metrics such as:
 * Mean Absolute Error (MAE)
 * Mean Squared Error (MSE)
 * Root Mean Squared Error (RMSE)
+* Silhouette Score
+* Adjusted Rand Index (ARI)
+* Normalized Mutual Information (NMI)
 
 This comparison helps verify the correctness of each scratch implementation while demonstrating the performance differences between educational implementations and highly optimized production-grade machine learning libraries.
 
@@ -190,7 +193,7 @@ This comparison helps verify the correctness of each scratch implementation whil
 
 ## Purpose
 
-This repository is designed for students, beginners, and aspiring Machine Learning Engineers who want to build a strong understanding of how machine learning algorithms work internally.
+Want to build a strong understanding of how machine learning algorithms work internally.
 
 Rather than only learning how to use machine learning libraries, the objective is to understand **why** the algorithms work by implementing them from scratch, validating them against industry-standard implementations, and applying them to real-world datasets.
 
