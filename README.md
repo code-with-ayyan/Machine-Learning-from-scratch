@@ -77,9 +77,10 @@ MachineLearningFromScratch/
 
 ## XGBoost 
 
-| Regression             | ✅ Completed |
-| Binary Classification  | ✅ Completed |
-| Multi class            | ⏳ Pending   |
+| ------------------ | :--------------------: |
+| Regression             | ✅ Completed       |
+| Binary Classification  | ✅ Completed       |
+| Multi class            | ⏳ Pending         |
 
 # 🧪 Practice — Model Tuning & Unsupervised Learning
 
