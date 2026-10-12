@@ -79,9 +79,15 @@ MachineLearningFromScratch/
 
 | Problem Type | Status |
 | :--- | :--- |
-| **Regression** | ✅ Completed |
-| **Binary Classification** | ✅ Completed |
-| **Multi-class Classification** | ⏳ Pending |
+| Regression | ✅ Completed |
+| Binary Classification | ✅ Completed |
+| Multi-class Classification | ⏳ Pending |
+
+
+## Unsupervised 
+| Algorithm | Status |
+| :--- | :--- |
+| KMeans | ✅ Completed |
 
 # 🧪 Practice — Model Tuning & Unsupervised Learning
 
