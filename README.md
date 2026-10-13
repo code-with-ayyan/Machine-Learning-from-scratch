@@ -34,6 +34,8 @@ MachineLearningFromScratch/
 ├── SVM/
 ├── Practice/
 ├── ensemble-learning-scratch/
+├── unsupervised_scratch/
+├── XGBoost/
 └── README.md
 ```
 
@@ -88,6 +90,7 @@ MachineLearningFromScratch/
 | Algorithm | Status |
 | :--- | :--- |
 | KMeans | ✅ Completed |
+| DBSCAN | ✅ Completed |
 
 # 🧪 Practice — Model Tuning & Unsupervised Learning
 
